@@ -1,0 +1,20 @@
+service: esbuild-lambda
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  esbuild-lambda:
+    handler: lib/lambda.handler
+    package:
+      include:
+        - package.json
+
+custom:
+  esbuild:
+    config: './esbuild.config.cjs'

@@ -1,0 +1,42 @@
+{
+  "name": "esbuild-lambda",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "npm run clean && npm test && tsc",
+    "clean": "del-cli lib",
+    "bundle": "npm run build && serverless package",
+    "postbundle": "del-cli .serverless/*.json",
+    "format": "prettier . --write",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "prepare": "husky install",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "author": "Tramaine L. Gillus",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "17.3.0",
+    "@commitlint/config-conventional": "17.3.0",
+    "@types/node": "18.11.16",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "del-cli": "5.0.0",
+    "esbuild": "0.16.8",
+    "eslint": "8.30.0",
+    "husky": "8.0.2",
+    "lint-staged": "13.1.0",
+    "prettier": "2.8.1",
+    "serverless": "3.25.1",
+    "serverless-esbuild": "1.34.0",
+    "serverless-offline": "12.0.3",
+    "tsx": "3.12.1",
+    "typescript": "4.9.4",
+    "vitest": "0.25.8"
+  },
+  "dependencies": {
+    "dayjs": "1.11.7",
+    "oracledb": "5.5.0"
+  }
+}

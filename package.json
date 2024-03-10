@@ -29,7 +29,7 @@
     "lint-staged": "15.2.2",
     "prettier": "3.2.5",
     "serverless": "3.38.0",
-    "serverless-esbuild": "1.52.0",
+    "serverless-esbuild": "1.52.1",
     "serverless-offline": "13.3.3",
     "tsx": "4.7.1",
     "typescript": "5.4.2",

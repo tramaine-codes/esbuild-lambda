@@ -19,7 +19,7 @@
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
-    "@types/node": "20.12.8",
+    "@types/node": "20.12.11",
     "@types/oracledb": "6.4.1",
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
@@ -31,7 +31,7 @@
     "serverless": "3.38.0",
     "serverless-esbuild": "1.52.1",
     "serverless-offline": "13.5.0",
-    "tsx": "4.9.1",
+    "tsx": "4.10.1",
     "typescript": "5.4.5",
     "vitest": "1.6.0"
   },

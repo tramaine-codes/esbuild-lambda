@@ -1,21 +1,5 @@
 {
-  "name": "esbuild-lambda",
-  "type": "module",
-  "version": "0.0.0",
-  "scripts": {
-    "build": "npm run clean && npm test && tsc",
-    "clean": "del-cli lib",
-    "bundle": "npm run build && serverless package",
-    "postbundle": "del-cli .serverless/*.json",
-    "format": "prettier . --write",
-    "lint": "eslint . --ext .js,.ts",
-    "lint:fix": "eslint . --ext .js,.ts --fix",
-    "prepare": "husky install",
-    "test": "vitest run",
-    "test:watch": "vitest"
-  },
   "author": "Tramaine L. Gillus",
-  "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
@@ -38,5 +22,21 @@
   "dependencies": {
     "dayjs": "1.11.11",
     "oracledb": "6.5.0"
-  }
+  },
+  "license": "ISC",
+  "name": "esbuild-lambda",
+  "scripts": {
+    "build": "npm run clean && npm test && tsc",
+    "clean": "del-cli lib",
+    "bundle": "npm run build && serverless package",
+    "postbundle": "del-cli .serverless/*.json",
+    "format": "prettier . --write",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "prepare": "husky install",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "type": "module",
+  "version": "0.0.0"
 }
